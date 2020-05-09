@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--Make a container for whole page whith background-color:whitesmoke-->
+  <div class="container-fluid" id="page">
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <a class="navbar-brand" href="index.html" id="logo">
+        <div class="navbar-header">
+          <center>Latitude</center>
+        </div>
+      </a>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <ul class="nav navbar-nav ml-auto">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <div class="navbar-collapse">
+              <ul class="dropdown-menu">
+                <li><a href="visualizations/visualization_1.html">Max Temperature</a></li>
+                <li><a href="visualizations/visualization_2.html">Humidity</a></li>
+                <li><a href="visualizations/visualization_3.html">Cloudiness</a></li>
+                <li><a href="visualizations/visualization_4.html">Wind Speed</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+    </nav>
+    <!-- End of navbar -->
+
+    <!--Rest of the body-->
+    <div class="row" id="container3">
+
+      <!--Make a container for Summary Box-->
+      <div class="col-md-12 pad top" id="container4">
+        <div class="box summary" id="box1">
+          <header class="header-body">
+            <h1><strong>Comparisons</strong></h1>
+          </header>
+          <hr>
+          </hr>
+          <main>
+          <section class="posts">
+            <article class="post">
+            <p>The following table includes all of the data used for plotting during this project.</p>
+
+            {{ table | safe }}
+
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+    </div>
+  <!-- Footer -->
+  <footer class="footer-nav">
+  </footer>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
